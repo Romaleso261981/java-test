@@ -2,12 +2,11 @@ package Human;
 
 class Human {
     int[] marks = new int[] {11, 3, 5, 12, 8, 4, 7, 2, 15, 10};
-    int age = 10;
+    int age = 19;
 
     public static void main(String[] args) {
         Human human = new Human();
         human.accessToAlcohol();
-        human.evenNumber();
         human.buyBread();
     }
 
