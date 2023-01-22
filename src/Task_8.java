@@ -20,7 +20,7 @@ public class Task_8 {
 
     private static void calculate(Number[] age) {
         for (int i = 0; i < age.length; i++) {
-            System.out.println(calculate(age[i]));
+            System.out.println(age[i]);
         }
     }
 
