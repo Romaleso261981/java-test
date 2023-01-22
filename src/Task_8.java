@@ -1,16 +1,12 @@
 
-import java.util.Arrays;
-
-import static java.util.Collections.binarySearch;
-
 public class Task_8 {
 
     public static void main(String[] args) {
         Number[] age = {12, 4, 5, 2, 5};
-        int a = 5;
 
-        calculate(age, a);
-    };
+
+        calculate(age);
+    }
 
 //    private static Number[] calculate(Number[] age, int a) {
 //        Number[] ageNew = new Number[age.length];
@@ -22,14 +18,10 @@ public class Task_8 {
 //        return ageNew;
 //    }
 
-    private static Number[] calculate(Number[] age, int a) {
-        Number[] ageNew = new Number[age.length];
+    private static void calculate(Number[] age) {
         for (int i = 0; i < age.length; i++) {
-            if (age[i] % a == 0) {
-                ageNew[i] = age[i];
-            }
+            System.out.println(calculate(age[i]));
         }
-        return ageNew;
     }
 
 
