@@ -9,6 +9,7 @@ public class Todo {
 //        System.out.println(Arrays.toString(age));
         Welcome();
 
+
     }
 
     public static void Welcome() {
@@ -29,10 +30,19 @@ public class Todo {
         }
 
         System.out.println(calculate(3, 4));
+        System.out.println(calculate(7, 9));
+        System.out.println(calculate(11, 26));
+
     }
 
     private static int calculate(int a, int b) {
+        System.out.println(myMethod(10));
         return a + b;
+
+    }
+
+    static int myMethod(int x) {
+        return 5 + x;
     }
 }
 
