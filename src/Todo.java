@@ -30,20 +30,24 @@ public class Todo {
         }
 
         System.out.println(calculate(3, 4));
-        System.out.println(calculate(7, 9));
-        System.out.println(calculate(11, 26));
+//        System.out.println(calculate(7, 9));
+//        System.out.println(calculate(11, 26));
 
     }
 
     private static int calculate(int a, int b) {
-        System.out.println(myMethod(10));
+        int z = myMethod(5, 3);
+        System.out.println(z);
         return a + b;
 
     }
 
-    static int myMethod(int x) {
-        return 5 + x;
+    static int myMethod(int x, int y) {
+        return y + x;
     }
+
+
+
 }
 
 
