@@ -5,9 +5,10 @@ import java.util.Arrays;
 public class Todo {
 
     public static void main(String[] args) {
-        Number[] age = {12, 4, 5, 2, 5};
-        System.out.println(Arrays.toString(age));
+//        Number[] age = {12, 4, 5, 2, 5};
+//        System.out.println(Arrays.toString(age));
         Welcome();
+
     }
 
     public static void Welcome() {
@@ -17,19 +18,24 @@ public class Todo {
         Scanner sc = new Scanner(System.in);
         if (sc.hasNextInt()) {
             int number = sc.nextInt();
-            if (number > 1 && number < 10) {
-                System.out.println("your number is out of range");
-            } else {
+            if (number < 10) {
                 System.out.println("your number " + number + " is within the given limits");
+
+            } else {
+                System.out.println("your number is out of range");
             }
         } else {
             System.out.println("Извините, но это явно не число. Перезапустите программу и попробуйте снова!");
         }
 
-
+        System.out.println(calculate(3, 4));
     }
 
-    ;
-
-
+    private static int calculate(int a, int b) {
+        return a + b;
+    }
 }
+
+
+
+
