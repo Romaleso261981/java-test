@@ -3,11 +3,18 @@ import java.util.*;
 
 public class Task_7 {
     public static void main(String args[]) {
+
+        int[] arr = new int[]{5, 2, 8, 6, 7, 1, 4, 8, 10, 22};
+
 //        printNum(10);
 //        sumOdd(25);
 //        ollSumNum(10);
-        ascendingArr();
+//        ascendingArr();
 //        descendingArr();
+//        numberEvenElements(arr);
+//        numberOddElements(arr);
+//        numberMultiplesOfSpecifiedNumber(arr, 3);
+        numbersMultiplesGivenNumber(arr, 2);
     }
 
     public static void printNum(int N) {
@@ -48,7 +55,7 @@ public class Task_7 {
     }
 
     public static void ascendingArr() {
-        int [] arr = new int [] {5, 2, 8, 7, 1};
+        int[] arr = new int[]{5, 2, 8, 7, 1};
         int temp = 0;
 
         System.out.println("Elements of original array: ");
@@ -57,8 +64,8 @@ public class Task_7 {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i+1; j < arr.length; j++) {
-                if(arr[i] > arr[j]) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
                     temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
@@ -73,7 +80,7 @@ public class Task_7 {
     }
 
     public static void descendingArr() {
-        int [] arr = new int [] {5, 2, 8, 7, 1};
+        int[] arr = new int[]{5, 2, 8, 7, 1};
         int temp = 0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -81,8 +88,8 @@ public class Task_7 {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i+1; j < arr.length; j++) {
-                if(arr[i] < arr[j]) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] < arr[j]) {
                     temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
@@ -94,5 +101,45 @@ public class Task_7 {
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i] + " ");
         }
+    }
+
+
+    public static void numberEvenElements(int[] array) {
+        int count = 0;
+        for (int element : array) {
+            if (element % 2 == 0) {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+
+    public static void numberOddElements(int[] array) {
+        int count = 0;
+        for (int element : array) {
+            if (element % 2 != 0) {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+
+    public static void numberMultiplesOfSpecifiedNumber(int[] array, int num) {
+        int count = 0;
+        for (int element : array) {
+            if (element % num == 0) {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+    public static void numbersMultiplesGivenNumber(int[] array, int num) {
+
+        for (int element : array) {
+            if (element % num == 0) {
+                System.out.print(element + " ");
+            }
+        }
+
     }
 }
