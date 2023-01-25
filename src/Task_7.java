@@ -1,15 +1,28 @@
 
 import java.util.*;
+
 public class Task_7 {
     public static void main(String args[]) {
-        int N, i, sum = 0;
+        printNum(10);
+        sumOdd(25);
+    }
 
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter a number");
-        N = in.nextInt();
+    public static void printNum(int N) {
+        int i;
 
-        for(i = 0; i <= N; i++){
-            if((i%2) == 1){
+        for (i = 0; i <= N; i++) {
+            System.out.println(i);
+        }
+
+    }public static void sumOdd(int N) {
+        int i, sum = 0;
+
+//        Scanner in = new Scanner(System.in);
+//        System.out.println("Enter a number");
+//        N = in.nextInt();
+
+        for (i = 0; i <= N; i++) {
+            if ((i % 2) == 1) {
                 sum += i;
             }
         }
