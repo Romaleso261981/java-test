@@ -4,17 +4,18 @@ import java.util.*;
 public class Task_7 {
     public static void main(String args[]) {
 
-        int[] arr = new int[]{5, 2, 8, 6, 7, 1, 4, 8, 10, 22};
+        int[] arr = new int[]{1, 2, 1, 6, 1, 2, 1, 6, 1, 2, 1, 6, 1, 2, 1, 6};
 
-//        printNum(10);
-//        sumOdd(25);
-//        ollSumNum(10);
-//        ascendingArr();
-//        descendingArr();
-//        numberEvenElements(arr);
-//        numberOddElements(arr);
-//        numberMultiplesOfSpecifiedNumber(arr, 3);
+        printNum(10);
+        sumOdd(25);
+        ollSumNum(10);
+        ascendingArr();
+        descendingArr();
+        numberEvenElements(arr);
+        numberOddElements(arr);
+        numberMultiplesOfSpecifiedNumber(arr, 3);
         numbersMultiplesGivenNumber(arr, 2);
+        sumEveryOtherNumber(arr);
     }
 
     public static void printNum(int N) {
@@ -103,6 +104,19 @@ public class Task_7 {
         }
     }
 
+    public static void sumEveryOtherNumber(int[] arr) {
+
+        int ollSum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (i % 2 == 0) {
+                ollSum += arr[i];
+
+            }
+        }
+        System.out.println(ollSum);
+    }
+
 
     public static void numberEvenElements(int[] array) {
         int count = 0;
@@ -133,11 +147,12 @@ public class Task_7 {
         }
         System.out.println(count);
     }
+
     public static void numbersMultiplesGivenNumber(int[] array, int num) {
 
         for (int element : array) {
             if (element % num == 0) {
-                System.out.print(element + " ");
+                System.out.println(element + " ");
             }
         }
 
