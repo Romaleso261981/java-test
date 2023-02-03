@@ -6,8 +6,6 @@ public class Task_11 {
     public static void main(String[] args) {
         String some = "String";
 
-
-//
 //
         Boolean k = true;
         while (k) {
