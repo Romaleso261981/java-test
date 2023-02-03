@@ -1,17 +1,24 @@
 public class Main {
     public static void main(String[] args) {
-        Box myObj = new Box();
+        Box myObj = new Box(22);
         myObj.value = "John";
         System.out.println(myObj.value);
-        Box myObj2 = new Box();
+        System.out.println(myObj.age);
+        Box myObj2 = new Box(37);
         myObj2.value = "Steven";
         System.out.println(myObj2.value);
+        System.out.println(myObj2.age);
+
     }
 }
 
 
 class Box {
     String value = "";
+    int age;
+    public Box(int y) {
+        age = y;
+    }
 
     public String getName() {
         return value;
@@ -21,4 +28,5 @@ class Box {
         this.value = newName;
     }
 }
+
 
